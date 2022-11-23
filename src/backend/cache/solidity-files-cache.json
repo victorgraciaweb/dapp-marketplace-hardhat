@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/victor/proyectos/blockchain/dapp-marketplace-hardhat/src/backend/contracts/Marketplace.sol": {
-      "lastModificationDate": 1669218868510,
-      "contentHash": "da4a4f507d77e87e527c1795d1cc70c6",
+      "lastModificationDate": 1669221867627,
+      "contentHash": "1261bfcbbea77b5d3f474ebf88c1e022",
       "sourceName": "src/backend/contracts/Marketplace.sol",
       "solcConfig": {
         "version": "0.8.4",

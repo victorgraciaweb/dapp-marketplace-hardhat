@@ -31,7 +31,7 @@ contract Marketplace is ReentrancyGuard {
     event Bought(
         uint itemId,
         address indexed nft,
-        uint tokenId, 
+        uint tokenId,
         uint price,
         address indexed seller,
         address indexed buyer
@@ -43,7 +43,7 @@ contract Marketplace is ReentrancyGuard {
     }
 
     function makeItem(IERC721 _nft, uint _tokenId, uint _price) external nonReentrant {
-        require(_price > 0);
+        require(_price > 0, "Price must be greater than zero");
         itemCount++;
         _nft.transferFrom(msg.sender, address(this), _tokenId);
         items[itemCount] = Item(
@@ -55,7 +55,7 @@ contract Marketplace is ReentrancyGuard {
             false
         );
         emit Offered(
-            itemCount, 
+            itemCount,
             address(_nft),
             _tokenId,
             _price,
