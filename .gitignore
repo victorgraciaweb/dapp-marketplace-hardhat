@@ -1,4 +1,6 @@
 .idea
+.secret
+/build
 /node_modules
 /src/backend/artifacts
 /src/backend/cache
